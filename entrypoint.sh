@@ -37,7 +37,7 @@ set -e
 #     exit 1
 # fi
 
-cp "/scripts" "./"
+cp -r "/scripts" "./"
 ls -a
 pwd
 
