@@ -67,9 +67,9 @@ def toolMaven(directory, arguments, outputFolder, configFile):
 
         reports = getFilesWithExtension(directory, 'TEST-*.xml', recursively=True)
 
-        reports = [x for x in directory.rglob('TEST-*.xml') if not x.parent]
+        #reports = [x for x in directory.rglob('TEST-*.xml') if not x.parent]
 
-        pathlib.Path(path).rglob(extension)
+        #pathlib.Path(path).rglob(extension)
 
         (outputFolder / f"report.{i}").mkdir(parents=True, exist_ok=True)
         for report in reports:
