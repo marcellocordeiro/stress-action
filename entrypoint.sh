@@ -37,7 +37,7 @@ set -e
 #     exit 1
 # fi
 
-cp "/github/workflow/main.py" "./main.py"
+cp "/scripts/main.py" "./main.py"
 ls -a
 pwd
 

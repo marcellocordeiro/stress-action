@@ -13,6 +13,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 #RUN apt-get update && apt-get install -y stress-ng
 
 COPY entrypoint.sh /entrypoint.sh
-COPY main.py /github/workflow/main.py
+COPY main.py /scripts/main.py
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
