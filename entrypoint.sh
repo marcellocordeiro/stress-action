@@ -41,6 +41,8 @@ cp -r "/scripts" "./"
 ls -a
 pwd
 
+python3 "./script/main.py" $INPUT_TEST_TYPE "."
+
 
 case $INPUT_TEST_TYPE in
     pytest)
