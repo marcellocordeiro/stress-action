@@ -37,8 +37,10 @@ set -e
 #     exit 1
 # fi
 
+cp "/github/workflow/main.py" "./main.py"
 ls -a
 pwd
+
 
 case $INPUT_TEST_TYPE in
     pytest)
