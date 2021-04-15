@@ -37,13 +37,16 @@ set -e
 #     exit 1
 # fi
 
+ls -a
+cwd
+
 case $INPUT_TEST_TYPE in
     pytest)
-        sh -c "if [ -f requirements.txt ]; then pip install -r requirements.txt; fi && pytest $INPUT_EXTRA_ARGUMENTS"
+        # sh -c "if [ -f requirements.txt ]; then pip install -r requirements.txt; fi && pytest $INPUT_EXTRA_ARGUMENTS"
     ;;
     
     maven)
-        sh -c "mvn test $INPUT_EXTRA_ARGUMENTS -q"
+        # sh -c "mvn test $INPUT_EXTRA_ARGUMENTS -q"
     ;;
     
     *)
