@@ -95,7 +95,7 @@ def main(args):
     failures = parseFailures(outputFolder)
 
     if len(failures) != 0:
-        print("The following tests have failed")
+        print("\n--- The following tests have failed ---")
 
         for failure in failures:
             print(f"stress-ng configuration: {failure.configuration}")

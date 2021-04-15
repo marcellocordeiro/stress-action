@@ -37,11 +37,11 @@ set -e
 #     exit 1
 # fi
 
-cp -r "/script" "./"
-ls -a
-pwd
+cp -r "/__stress_script" "./"
+#ls -a
+#pwd
 
-python3 "./script/main.py" $INPUT_TEST_TYPE "."
+python3 "./__stress_script/main.py" $INPUT_TEST_TYPE "." -o "./__stress_output"
 
 
 case $INPUT_TEST_TYPE in
