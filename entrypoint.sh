@@ -37,7 +37,7 @@ set -e
 #     exit 1
 # fi
 
-cp "/scripts/main.py" "./main.py"
+cp "/scripts" "./"
 ls -a
 pwd
 
