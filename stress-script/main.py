@@ -66,9 +66,15 @@ def toolMaven(directory, arguments, outputFolder, configFile):
                       stdout=subprocess.DEVNULL)
 
         reports = getFilesWithExtension(directory, 'TEST-*.xml', recursively=True)
+
+        reports = [x for x in directory.rglob('TEST-*.xml') if not x.parent]
+
+        pathlib.Path(path).rglob(extension)
+
         (outputFolder / f"report.{i}").mkdir(parents=True, exist_ok=True)
         for report in reports:
-            shutil.copy(report, outputFolder / f"report.{i}" / report.name)
+            if report.parent.parent != outputFolder
+                shutil.copy(report, outputFolder / f"report.{i}" / report.name)
 
         stressNgSubprocess.kill()
 
