@@ -73,7 +73,7 @@ def toolMaven(directory, arguments, outputFolder, configFile):
 
         (outputFolder / f"report.{i}").mkdir(parents=True, exist_ok=True)
         for report in reports:
-            if report.parent.parent != outputFolder
+            if report.parent.parent != outputFolder:
                 shutil.copy(report, outputFolder / f"report.{i}" / report.name)
 
         stressNgSubprocess.kill()
