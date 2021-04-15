@@ -38,7 +38,7 @@ set -e
 # fi
 
 ls -a
-cwd
+pwd
 
 case $INPUT_TEST_TYPE in
     pytest)
