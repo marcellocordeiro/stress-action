@@ -13,6 +13,6 @@ RUN python3 -m pip install pytest
 RUN apt-get update && apt-get install -y stress-ng
 
 COPY entrypoint.sh /entrypoint.sh
-COPY stress-script /scripts
+COPY stress-script /script
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
