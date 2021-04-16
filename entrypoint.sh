@@ -41,7 +41,7 @@ cp -r "/__stress_script" "./"
 #ls -a
 #pwd
 
-python3 "./__stress_script/main.py" $INPUT_TEST_TYPE "." -o "./__stress_output"
+python3 "./__stress_script/main.py" $INPUT_TEST_TYPE "." -o "./__stress_output" -nsr $INPUT_NO_STRESS_RUNS -sr $INPUT_STRESS_RUNS
 
 
 case $INPUT_TEST_TYPE in
