@@ -17,6 +17,5 @@ RUN apt-get install -y stress-ng
 RUN apt-get install -y git
 
 COPY entrypoint.sh /entrypoint.sh
-# COPY stress-script /__stress_script
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

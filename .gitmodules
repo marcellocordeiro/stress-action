@@ -1,3 +1,0 @@
-[submodule "stress-script"]
-	path = stress-script
-	url = git@github.com:marcellocordeiro/stress-script.git
