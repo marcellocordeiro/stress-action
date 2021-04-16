@@ -37,7 +37,7 @@ set -e
 #     exit 1
 # fi
 
-git clone https://github.com/marcellocordeiro/stress-action.git ./__stress_script
+git clone https://github.com/marcellocordeiro/stress-script.git ./__stress_script
 # cp -r "/__stress_script" "./"
 #ls -a
 #pwd
