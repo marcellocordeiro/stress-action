@@ -11,3 +11,7 @@
     no_stress_runs: int
     stress_runs: int
 ```
+
+### stress-script repo
+[@marcellocordeiro/stress-script](https://github.com/marcellocordeiro/stress-script)
+
