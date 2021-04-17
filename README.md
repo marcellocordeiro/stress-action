@@ -2,7 +2,7 @@
 
 ### Usage
 
-```yml
+```yaml
 - name: Run stress tests
   uses: marcellocordeiro/stress-action@main
   with:
