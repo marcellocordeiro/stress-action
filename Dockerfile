@@ -10,10 +10,14 @@ RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install pytest colorama
 
 # Java/Maven support
-RUN apt-get install -y openjdk-11-jdk maven
+RUN apt-get install -y openjdk-8-jdk
+# RUN apt-get install -y openjdk-11-jdk
+RUN apt-get install -y maven
 
+# stress-ng
 RUN apt-get install -y stress-ng
 
+# git
 RUN apt-get install -y git
 
 COPY entrypoint.sh /entrypoint.sh
