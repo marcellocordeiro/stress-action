@@ -1,6 +1,6 @@
-FROM openjdk:8-buster
+FROM ubuntu:20.04
 
-#ENV DEBIAN_FRONTEND=noninteractive 
+ENV DEBIAN_FRONTEND=noninteractive 
 
 RUN apt-get update
 
@@ -10,10 +10,10 @@ RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install pytest colorama
 
 # Java/Maven support
-#RUN apt-get install -y openjdk-8-jdk
+RUN apt-get install -y openjdk-8-jdk
 # RUN apt-get install -y openjdk-11-jdk
 RUN apt-get install -y maven
-#RUN apt-get install -y nodejs npm
+RUN apt-get install -y nodejs npm
 
 # stress-ng
 RUN apt-get install -y stress-ng
