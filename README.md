@@ -1,4 +1,4 @@
-# stress-action
+# shaker-action
 
 This action uses [@marcellocordeiro/stress-script](https://github.com/marcellocordeiro/stress-script) in your GitHub workflow to detect flakiness. If the job ends in failure, flakes were detected and errors will be reported.
 
