@@ -14,7 +14,7 @@ inputs:
     required: false
   stress_runs:
     description: Number of stress runs
-    default: "1"
+    default: "3"
     required: false
 
 runs:
