@@ -11,7 +11,6 @@ RUN python3 -m pip install pytest colorama
 
 # Java/Maven support
 RUN apt-get install -y openjdk-8-jdk
-# RUN apt-get install -y openjdk-11-jdk
 RUN apt-get install -y maven
 RUN apt-get install -y nodejs npm
 
